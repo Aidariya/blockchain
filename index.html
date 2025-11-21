@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note dApp</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ethers.js -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Aidariya's Note dApp</h1>
+    <button id="connectButton">Connect Wallet</button>
+
+    <div>
+      <label for="note">Write note:</label>
+      <input type="text" id="note" placeholder="Enter note..." />
+    </div>
+
+    <div>
+      <button id="setBtn">Set Note</button>
+      <button id="getBtn">Get Note</button>
+    </div>
+
+    <p>My note: <span id="result"></span></p>
+  </div>
+</body>
+</html>
