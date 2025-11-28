@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #6e85df, #4d63c9);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 0;
+}
+
+/* HEADER */
+header {
+    background: white;
+    padding: 25px 20px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header > h1 {
+    text-align: center;
+    color: #181823;
+}
+
+/* SCORE BOARD */
+.score-board {
+    margin: 0 auto 40px;
+    border: 3px solid white;
+    text-align: center;
+    width: 240px;
+    color: white;
+    font-size: 48px;
+    padding: 25px 20px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.badge {
+    background: #E2584D;
+    color: white;
+    font-size: 16px;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+
+#user-label {
+    position: absolute;
+    top: -12px;
+    left: -20px;
+}
+
+#computer-label {
+    position: absolute;
+    top: -12px;
+    right: -25px;
+}
+
+/* RESULT */
+.result {
+    font-size: 38px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.result > p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CHOICES */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.choice {
+    border: 4px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.25s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: #a95151;
+    transform: translateY(-5px);
+}
+
+/* ACTION MESSAGE */
+#action-msg {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+#connectBtn {
+    background: linear-gradient(135deg, #5b8dff, #3152e9);
+    color: white;
+    padding: 14px 26px;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Effects */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25), 0 0 10px rgba(80,118,255,0.6);
+    transition: 0.25s ease;
+}
+
+#connectBtn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.35), 0 0 14px rgba(80,118,255,0.9);
+}
+
+#connectBtn:active {
+    transform: translateY(0px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
